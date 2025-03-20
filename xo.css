@@ -1,0 +1,112 @@
+/* עיצוב כללי של הדף */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    background: linear-gradient(135deg, #00f260, #0575e6); /* צבעי רקע מדליקים */
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* עיצוב הכותרת */
+#title {
+    font-size: 4em;
+    color: #fff;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.8);
+    margin-bottom: 30px;
+    background: linear-gradient(45deg, #ff416c, #ff4b2b); /* צבעים מדליקים */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: titleAnimation 3s infinite alternate;
+}
+
+/* אנימציה לכותרת */
+@keyframes titleAnimation {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.1);
+    }
+}
+
+/* עיצוב כללי של המיכל */
+#container {
+    display: grid;
+    grid-template-columns: repeat(3, 120px);
+    grid-gap: 20px;
+    justify-content: center;
+    margin-top: 50px;
+    background: radial-gradient(circle at center, #6a0dad, #000000);
+    padding: 50px;
+    border-radius: 20px;
+}
+
+/* עיצוב הכפתורים */
+button {
+    width: 120px;
+    height: 120px;
+    font-size: 40px;
+    border: none;
+    outline: none;
+    border-radius: 15px;
+    background-color: #3f3f3f;
+    color: white;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+/* אפקט לחיצה */
+button:active {
+    transform: scale(0.95);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* אפקט מעבר עם העכבר */
+button:hover {
+    background-color: #555555;
+    box-shadow: 0px 0px 25px rgba(255, 255, 255, 0.5);
+}
+
+/* אפקטים כאשר הכפתור לחוץ והמשחק מתבצע */
+button.clicked-o {
+    background-color: #39ff14; /* צבע זוהר */
+    box-shadow: 0px 0px 25px rgba(57, 255, 20, 0.7);
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+button.clicked-x {
+    background-color: #ff414d; /* צבע זוהר */
+    box-shadow: 0px 0px 25px rgba(255, 65, 77, 0.7);
+    transition: background-color 0.4s ease, box-shadow 0.4s ease;
+}
+
+/* אנימציה של אור */
+button::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300%;
+    height: 300%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 30%, transparent 70%);
+    transition: opacity 0.5s ease;
+    opacity: 0;
+    transform: translate(-50%, -50%);
+    z-index: 0;
+}
+
+button.clicked-o::before, button.clicked-x::before {
+    opacity: 1;
+}
+.fireworks-popup {
+    background: url('https://example.com/fireworks-image.png') no-repeat center center;
+    background-size: cover;
+    box-shadow: 0 0 25px rgba(255, 255, 255, 0.5);
+}
