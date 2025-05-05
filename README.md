@@ -25,7 +25,7 @@ This is a simple XO (Tic-Tac-Toe) game implemented using HTML, CSS, and JavaScri
 2. Navigate to the project directory:
   cd XO
 
-3.Open the xo.html file in your browser to start the game.
+  3.Open the xo.html file in your browser to start the game.
 File Structure
 ##
 xo.html: The main HTML file for the game.
