@@ -1,8 +1,3 @@
-
----
-
-### **תיעוד קוד**
-
 # XO Game
 
 This is a simple XO (Tic-Tac-Toe) game implemented using HTML, CSS, and JavaScript. The game allows two players to compete against each other in a classic XO game.
