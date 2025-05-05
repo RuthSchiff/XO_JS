@@ -24,6 +24,7 @@ This is a simple XO (Tic-Tac-Toe) game implemented using HTML, CSS, and JavaScri
    git clone https://github.com/RuthSchiff/XO.git
 2. Navigate to the project directory:
   cd XO
+##
 3.Open the xo.html file in your browser to start the game.
 File Structure
 ##
