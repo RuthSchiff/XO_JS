@@ -85,8 +85,6 @@ function PlayGame(button) {
         }).then(() => {
             resetGame(); // אתחול המשחק לאחר סיום
         });
-        
-        // alert(`${winer()} wins`)
         return;
     }
 
