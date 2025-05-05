@@ -1,3 +1,48 @@
+# משחק איקס עיגול (XO)
+## זהו משחק איקס עיגול פשוט, שנבנה באמצעות HTML, CSS ו-JavaScript. המשחק מאפשר לשני שחקנים להתחרות זה בזה במשחק הקלאסי של איקס עיגול.
+
+# תכונות עיקריות
+לוח משחק אינטראקטיבי.
+
+עיצוב רספונסיבי המתאים למגוון מסכים.
+
+התראות והודעות באמצעות SweetAlert2.
+
+טכנולוגיות בשימוש
+HTML
+
+CSS
+
+JavaScript
+
+SweetAlert2 (להתראות והודעות)
+
+# כיצד להריץ את המשחק
+לשכפל את המאגר:
+
+bash
+Copy
+Edit
+git clone https://github.com/RuthSchiff/XO.git
+להיכנס לתיקיית הפרויקט:
+
+bash
+Copy
+Edit
+cd XO
+לפתוח את הקובץ xo.html בדפדפן כדי להתחיל לשחק.
+
+מבנה הקבצים
+# xo.html:
+קובץ ה-HTML הראשי של המשחק.
+
+# xo.css:
+קובץ ה-CSS לעיצוב וסגנון המשחק.
+
+# xo.js:
+קובץ ה-JavaScript שמכיל את לוגיקת המשחק.
+
+
 # XO Game
 
 This is a simple XO (Tic-Tac-Toe) game implemented using HTML, CSS, and JavaScript. The game allows two players to compete against each other in a classic XO game.
