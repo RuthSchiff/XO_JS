@@ -1,3 +1,10 @@
+/*
+This file contains the logic for the XO game.
+Features:
+- Handles player turns.
+- Checks for a winner or a draw.
+- Resets the game board.
+*/
 container = document.getElementById('container')
 let count = 0;
 let countTimes = 0;

@@ -1,4 +1,9 @@
-/* עיצוב כללי של הדף */
+/* 
+This file contains the styles for the XO game.
+It includes:
+- Styling for the game board.
+- Responsive design for different screen sizes.
+*/
 body {
     margin: 0;
     padding: 0;
