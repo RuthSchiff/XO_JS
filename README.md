@@ -25,12 +25,14 @@ bash
 Copy
 Edit
 git clone https://github.com/RuthSchiff/XO.git
+
 להיכנס לתיקיית הפרויקט:
 
 bash
 Copy
 Edit
 cd XO
+
 לפתוח את הקובץ xo.html בדפדפן כדי להתחיל לשחק.
 
 מבנה הקבצים
